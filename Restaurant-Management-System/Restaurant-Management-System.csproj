@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B679C1DF-FBBF-4DEF-A9E1-064E891C6DCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant_Management_System</RootNamespace>
+    <AssemblyName>Restaurant-Management-System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewForm.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>NewForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hnet.com-image %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park-modified.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\park-modified1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coloruser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyeicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eye-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hide-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54659021.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club-sandwich-recipe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devil eggs.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oreos.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bake and shark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate chips.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bacon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clam cakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham biscuits.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear claw.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\momo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chowmein.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaghetti.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fry rice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken roast.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biryani.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pork chops.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ham biscuits1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lavacake.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheesecake.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brownies.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friedicecream.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waffles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caramelappletart.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nut truffle.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classic cannoli.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocacola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fanta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain dew.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milk shake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lemonade.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepsi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mango juice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink lady.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuba libre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiskey sour.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old fashioned.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloody mary.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mink julep.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frozen daiquiri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vodka gimlet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planter%27s punch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sweet mimosa.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
